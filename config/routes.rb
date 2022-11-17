@@ -3,6 +3,16 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
-  root 'pages#home'
-  get 'about', to: 'pages#about'
+
+  resources :restaurants
+
+  # root 'pages#home'
+  # get 'about', to: 'pages#about'
+  # get 'restaurants', to: 'restaurants#index'
+  # get 'restaurants/new', to: 'restaurants#new'
+  # post 'restaurants', to: 'restaurants#create'
+  # get 'restaurants/:id', to: 'restaurants#show', as: :restaurant
+  # get 'restaurants/:id/edit', to: 'restaurants#edit'
+  # patch 'restaurants/:id', to: 'restaurants#update'
+  # delete 'restaurants/:id', to: 'restaurants#destroy'
 end
